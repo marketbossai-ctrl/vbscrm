@@ -44,7 +44,9 @@ nav .cta-btn { background: var(--accent); color: var(--bg) !important; padding: 
 .business-info a { color: var(--accent); text-decoration: none; }
 .page-footer { text-align: center; padding: 20px 0 30px; font-size: 0.72rem; color: var(--muted); margin-top: 40px; }
 .page-footer a { color: var(--accent); text-decoration: none; }
-@media (max-width: 640px) { nav .inner { flex-direction: column; text-align: center; } }
+.sticky-phone { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: var(--accent); padding: 12px 20px; text-align: center; }
+.sticky-phone a { color: var(--bg); text-decoration: none; font-size: 0.95rem; font-weight: 700; }
+@media (max-width: 640px) { nav .inner { flex-direction: column; text-align: center; }.sticky-phone { display: block; } }
 </style>
 </head>
 <body>
@@ -103,4 +105,5 @@ nav .cta-btn { background: var(--accent); color: var(--bg) !important; padding: 
   <p>Powered by <a href="https://marketbossai.com">Market Boss AI</a></p>
   <p style="margin-top:6px;"><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></p>
 </footer>
+<div class="sticky-phone"><a href="tel:+17572713060">📞 Call Brilliant Glass: (757) 271-3060</a></div>
 </body></html>

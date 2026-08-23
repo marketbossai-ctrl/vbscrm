@@ -9,7 +9,7 @@
 {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://www.brilliantglass.net/#business","name":"Brilliant Glass","description":"Custom shower doors, glass enclosures, office partitions, mirrors, and glass etching serving Virginia Beach, Norfolk, Chesapeake, Portsmouth, and Hampton, VA.","url":"https://www.brilliantglass.net/","telephone":"+1-757-271-3060","email":"brilliant@brilliantglass.net","priceRange":"$$","openingHours":"Mo-Fr 09:00-17:00","address":{"@type":"PostalAddress","streetAddress":"1461 London Bridge Rd #216","addressLocality":"Virginia Beach","addressRegion":"VA","postalCode":"23453","addressCountry":"US"},"areaServed":["Virginia Beach","Norfolk","Chesapeake","Portsmouth","Hampton","Hampton Roads"],"geo":{"@type":"GeoCoordinates","latitude":"36.7832","longitude":"-76.0917"},"contactPoint":{"@type":"ContactPoint","telephone":"+1-757-271-3060","email":"brilliant@brilliantglass.net","contactType":"customer service","areaServed":"US-VA","availableLanguage":"English"},"knowsAbout":["Shower Enclosures","Custom Glass and Mirrors","Glass Etching","Office Glass Partitions","Glass Installation","Frameless Shower Doors"],"sameAs":[]}
 </script>
 <style>
-:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #d4d4d4; --muted: #999; --accent: #60a5fa; --heading: #f0f0f0; }
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #d4d4d4; --muted: #999; --accent: #60a5fa; --heading: #f0f0f0; --dark: #0a0a0a; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.65; }
 .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
@@ -44,6 +44,8 @@ nav .cta-btn { background: var(--accent); color: var(--bg) !important; padding: 
 .business-info a { color: var(--accent); text-decoration: none; }
 .page-footer { text-align: center; padding: 20px 0 30px; font-size: 0.72rem; color: var(--muted); margin-top: 40px; }
 .page-footer a { color: var(--accent); text-decoration: none; }
+.sticky-phone { display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: var(--accent); padding: 12px 20px; text-align: center; }
+.sticky-phone a { color: var(--bg); text-decoration: none; font-size: 0.95rem; font-weight: 700; }
 @media (max-width: 640px) { nav .inner { flex-direction: column; text-align: center; } }
 </style>
 </head>
@@ -111,4 +113,5 @@ nav .cta-btn { background: var(--accent); color: var(--bg) !important; padding: 
   <p>Powered by <a href="https://marketbossai.com">Market Boss AI</a></p>
   <p style="margin-top:6px;"><a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="terms.html">Terms of Use</a></p>
 </footer>
+<div class="sticky-phone"><a href="tel:+17572713060">📞 Call Brilliant Glass: (757) 271-3060</a></div>
 </body></html>
