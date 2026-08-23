@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rib City — VBSpotlight CRM</title>
+<style>
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #7c3aed; --accent2: #a78bfa; --green: #22c55e; --orange: #f97316; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
+.detail-page { max-width: 700px; margin: 0 auto; }
+h1 { font-size: 1.5rem; }
+.back-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 16px; }
+.back-link:hover { color: var(--text); }
+.stage-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px; background: rgba(249,115,22,0.15); color: var(--orange); }
+.section { background: var(--card); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+.section h2 { font-size: 1rem; margin-bottom: 10px; color: var(--accent2); }
+.section ul { list-style: none; }
+.section ul li { padding: 4px 0; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+.check { color: var(--green); }
+.uncheck { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+td { padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+td:first-child { color: var(--muted); font-weight: 500; white-space: nowrap; }
+.note { background: rgba(249,115,22,0.08); border-radius: 6px; padding: 10px 14px; font-size: 0.85rem; margin-top: 8px; border-left: 3px solid var(--orange); }
+.updated { font-size: 0.75rem; color: var(--muted); margin-top: 30px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="detail-page">
+  <a href="index.html" class="back-link">← Back to CRM</a>
+  <h1>Rib City — Virginia Beach</h1>
+  <div class="stage-label">🟠 Reviewed — Research Complete</div>
+
+  <div class="section">
+    <h2>Pipeline</h2>
+    <ul>
+      <li><span class="check">✅</span> Contacted</li>
+      <li><span class="uncheck">⬜</span> Applied</li>
+      <li><span class="check">✅</span> Reviewed</li>
+      <li><span class="uncheck">⬜</span> Interview Scheduled</li>
+      <li><span class="uncheck">⬜</span> Interview Completed</li>
+      <li><span class="uncheck">⬜</span> Article Draft</li>
+      <li><span class="uncheck">⬜</span> Published</li>
+      <li><span class="uncheck">⬜</span> Second Call</li>
+      <li><span class="uncheck">⬜</span> Pitched (MBA)</li>
+      <li><span class="uncheck">⬜</span> Won / Cold</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Quick Facts</h2>
+    <table>
+      <tr><td>Brand</td><td>Rib City ("The Ribs That Legends Are Made Of")</td></tr>
+      <tr><td>Type</td><td>Franchise BBQ restaurant (founded 1989, Fort Myers)</td></tr>
+      <tr><td>Owner</td><td>Franchisee (name TBD)</td></tr>
+      <tr><td>Phone</td><td>(757) 961-3690</td></tr>
+      <tr><td>Website</td><td>ribcity.com</td></tr>
+      <tr><td>Location</td><td>4688 Princess Anne Rd, Virginia Beach</td></tr>
+      <tr><td>Rating</td><td>Google 4.3 ★</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Interview</h2>
+    <table>
+      <tr><td>Status</td><td>Not yet scheduled</td></tr>
+      <tr><td>Questions</td><td>8 prepared (franchise/local balance, why VB, catering)</td></tr>
+    </table>
+    <div class="note">Need to identify the franchisee name before outreach. Local FB page: Facebook.com/RibCityVB</div>
+  </div>
+
+  <div class="section">
+    <h2>Market Boss AI Opportunity</h2>
+    <table>
+      <tr><td>Tier</td><td>Growth ($1,750 setup / $875/mo)</td></tr>
+      <tr><td>Pitch</td><td>"You've got the brand. When VB searches 'best BBQ near me,' I make sure you beat Mission BBQ."</td></tr>
+    </table>
+  </div>
+
+  <p class="updated">Full research brief: ribcity_research.txt • VBSpotlight CRM</p>
+</div>
+</body>
+</html>

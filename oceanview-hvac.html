@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ocean View HVAC — VBSpotlight CRM</title>
+<style>
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #7c3aed; --accent2: #a78bfa; --green: #22c55e; --purple: #a855f7; --orange: #f97316; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
+.detail-page { max-width: 700px; margin: 0 auto; }
+h1 { font-size: 1.5rem; }
+.back-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 16px; }
+.back-link:hover { color: var(--text); }
+.stage-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 12px; background: rgba(168,85,247,0.15); color: var(--purple); }
+.section { background: var(--card); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
+.section h2 { font-size: 1rem; margin-bottom: 10px; color: var(--accent2); }
+.section ul { list-style: none; }
+.section ul li { padding: 4px 0; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
+.check { color: var(--green); }
+.uncheck { color: var(--muted); }
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+td { padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+td:first-child { color: var(--muted); font-weight: 500; white-space: nowrap; }
+.note { background: rgba(124,58,237,0.08); border-radius: 6px; padding: 10px 14px; font-size: 0.85rem; margin-top: 8px; border-left: 3px solid var(--accent); }
+.updated { font-size: 0.75rem; color: var(--muted); margin-top: 30px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="detail-page">
+  <a href="index.html" class="back-link">← Back to CRM</a>
+  <h1>Ocean View HVAC</h1>
+  <div class="stage-label">🟣 Interview Scheduled</div>
+
+  <div class="section">
+    <h2>Pipeline</h2>
+    <ul>
+      <li><span class="check">✅</span> Contacted</li>
+      <li><span class="uncheck">⬜</span> Applied</li>
+      <li><span class="check">✅</span> Reviewed</li>
+      <li><span class="check">✅</span> Interview Scheduled</li>
+      <li><span class="uncheck">⬜</span> Interview Completed</li>
+      <li><span class="uncheck">⬜</span> Article Draft</li>
+      <li><span class="uncheck">⬜</span> Published</li>
+      <li><span class="uncheck">⬜</span> Second Call</li>
+      <li><span class="uncheck">⬜</span> Pitched (MBA)</li>
+      <li><span class="uncheck">⬜</span> Won / Cold</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Quick Facts</h2>
+    <table>
+      <tr><td>Owner</td><td>Earl</td></tr>
+      <tr><td>Phone</td><td>(757) 377-2042</td></tr>
+      <tr><td>Email</td><td>service@oceanviewhvac.com</td></tr>
+      <tr><td>Website</td><td>oceanviewhvac.com</td></tr>
+      <tr><td>Location</td><td>Norfolk, VA (Ocean View area)</td></tr>
+      <tr><td>Hours</td><td>24/7 phone support</td></tr>
+      <tr><td>Services</td><td>HVAC, geothermal, plumbing, water heaters</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>Interview</h2>
+    <table>
+      <tr><td>Scheduled</td><td>Thursday, August 28 at 2:00 PM</td></tr>
+      <tr><td>Questions</td><td>8 prepared (Earl's story, geothermal, competitors, community)</td></tr>
+    </table>
+    <div class="note">Earl was enthusiastic. His son might join the call. Send Zoom invite.</div>
+  </div>
+
+  <div class="section">
+    <h2>Market Boss AI Opportunity</h2>
+    <table>
+      <tr><td>Tier</td><td>Growth ($1,750 setup / $875/mo)</td></tr>
+      <tr><td>Pitch</td><td>"You're the best HVAC tech in Ocean View — but do people find you or Michael & Son at 2 AM?"</td></tr>
+    </table>
+  </div>
+
+  <p class="updated">Full research brief: oceanview_hvac_research.md • VBSpotlight CRM</p>
+</div>
+</body>
+</html>
