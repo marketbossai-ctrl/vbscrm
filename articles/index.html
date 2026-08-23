@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VBSpotlight Articles — Market Boss AI</title>
+<title>Articles & Audits — Market Boss AI</title>
 <style>
-:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #a78bfa; --orange: #f97316; --green: #22c55e; --purple: #a855f7; }
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #a78bfa; --orange: #f97316; --green: #22c55e; --red: #ef4444; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
 .container { max-width: 740px; margin: 0 auto; }
@@ -16,6 +16,7 @@ h1 { font-size: 1.4rem; margin-bottom: 4px; }
 .card { background: var(--card); border-radius: 10px; padding: 20px; margin-bottom: 10px; border-left: 4px solid var(--accent); display: flex; justify-content: space-between; align-items: center; gap: 14px; }
 .card.feature { border-left-color: var(--accent); }
 .card.research { border-left-color: var(--orange); }
+.card.audit { border-left-color: var(--red); }
 .card h3 { font-size: 0.95rem; margin-bottom: 2px; }
 .card h3 a { color: var(--accent); text-decoration: none; }
 .card h3 a:hover { text-decoration: underline; }
@@ -23,14 +24,15 @@ h1 { font-size: 1.4rem; margin-bottom: 4px; }
 .card .type { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.8px; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
 .type-feature { background: rgba(167,139,250,0.12); color: var(--accent); }
 .type-research { background: rgba(249,115,22,0.1); color: var(--orange); }
+.type-audit { background: rgba(239,68,68,0.1); color: var(--red); }
 .updated { font-size: 0.72rem; color: var(--muted); margin-top: 32px; text-align: center; }
 </style>
 </head>
 <body>
 <div class="container">
   <a href="../" class="back-link">← Hub</a>
-  <h1>📝 VBSpotlight Articles</h1>
-  <p class="subtitle">Article drafts and pre-interview research briefs</p>
+  <h1>📝 Articles & Audits</h1>
+  <p class="subtitle">Feature articles, pre-interview research, and SEO audits</p>
 
   <div class="section-label">Feature Articles</div>
 
@@ -40,6 +42,16 @@ h1 { font-size: 1.4rem; margin-bottom: 4px; }
       <div class="desc">Jeff Wilson, Founder • ~800 words • August 23, 2026</div>
     </div>
     <span class="type type-feature">Feature</span>
+  </div>
+
+  <div class="section-label">SEO Audits</div>
+
+  <div class="card audit">
+    <div>
+      <h3><a href="brilliantglass-seo-audit.html">Brilliant Glass — SEO Audit</a></h3>
+      <div class="desc">Grade D • 14 issues found • brilliantglass.net • Duda platform</div>
+    </div>
+    <span class="type type-audit">Audit</span>
   </div>
 
   <div class="section-label">Pre-Interview Research Briefs</div>
