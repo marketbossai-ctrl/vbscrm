@@ -4,33 +4,60 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VBSpotlight Articles — Market Boss AI</title>
 <style>
-:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #7c3aed; --accent2: #a78bfa; --orange: #f97316; --green: #22c55e; }
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #a78bfa; --orange: #f97316; --green: #22c55e; --purple: #a855f7; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
-.container { max-width: 700px; margin: 0 auto; }
-h1 { font-size: 1.4rem; margin-bottom: 6px; }
-.muted { color: var(--muted); font-size: 0.85rem; margin-bottom: 24px; }
-.back-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 20px; }
+.container { max-width: 740px; margin: 0 auto; }
+h1 { font-size: 1.4rem; margin-bottom: 4px; }
+.subtitle { color: var(--muted); font-size: 0.82rem; margin-bottom: 28px; }
+.back-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.8rem; margin-bottom: 24px; }
 .back-link:hover { color: var(--text); }
-.card { background: var(--card); border-radius: 10px; padding: 18px; margin-bottom: 12px; border-left: 4px solid var(--orange); }
-.card h3 { font-size: 1rem; margin-bottom: 4px; }
-.card h3 a { color: var(--accent2); text-decoration: none; }
+.section-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 24px 0 10px; }
+.card { background: var(--card); border-radius: 10px; padding: 20px; margin-bottom: 10px; border-left: 4px solid var(--accent); display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.card.feature { border-left-color: var(--accent); }
+.card.research { border-left-color: var(--orange); }
+.card h3 { font-size: 0.95rem; margin-bottom: 2px; }
+.card h3 a { color: var(--accent); text-decoration: none; }
 .card h3 a:hover { text-decoration: underline; }
-.card .meta { font-size: 0.8rem; color: var(--muted); }
-.article-preview { background: rgba(124,58,237,0.06); border-radius: 6px; padding: 14px; margin-top: 10px; font-size: 0.8rem; color: var(--muted); line-height: 1.5; max-height: 80px; overflow: hidden; }
-.updated { font-size: 0.75rem; color: var(--muted); margin-top: 30px; text-align: center; }
+.card .desc { font-size: 0.78rem; color: var(--muted); }
+.card .type { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.8px; padding: 3px 8px; border-radius: 3px; white-space: nowrap; }
+.type-feature { background: rgba(167,139,250,0.12); color: var(--accent); }
+.type-research { background: rgba(249,115,22,0.1); color: var(--orange); }
+.updated { font-size: 0.72rem; color: var(--muted); margin-top: 32px; text-align: center; }
 </style>
 </head>
 <body>
 <div class="container">
   <a href="../" class="back-link">← Hub</a>
   <h1>📝 VBSpotlight Articles</h1>
-  <p class="muted">Article drafts ready for client review or publishing</p>
+  <p class="subtitle">Article drafts and pre-interview research briefs</p>
 
-  <div class="card">
-    <h3><a href="marketbossai.html">Market Boss AI</a></h3>
-    <div class="meta">Jeff Wilson, Founder • Virginia Beach, VA • August 23, 2026</div>
-    <div class="article-preview">When a local business owner in Hampton Roads decides it is time to get serious about showing up online, the options can feel overwhelming. Expensive ad agencies. Long term contracts. A sea of jargon...</div>
+  <div class="section-label">Feature Articles</div>
+
+  <div class="card feature">
+    <div>
+      <h3><a href="marketbossai.html">Market Boss AI: Local SEO Services That Put Virginia Beach Businesses on the Map</a></h3>
+      <div class="desc">Jeff Wilson, Founder • ~800 words • August 23, 2026</div>
+    </div>
+    <span class="type type-feature">Feature</span>
+  </div>
+
+  <div class="section-label">Pre-Interview Research Briefs</div>
+
+  <div class="card research">
+    <div>
+      <h3><a href="oceanview-hvac.html">Ocean View HVAC</a></h3>
+      <div class="desc">Earl, Owner • Norfolk, VA • Interview Aug 28 at 2pm</div>
+    </div>
+    <span class="type type-research">Research</span>
+  </div>
+
+  <div class="card research">
+    <div>
+      <h3><a href="ribcity.html">Rib City — Virginia Beach</a></h3>
+      <div class="desc">Franchise BBQ • Franchisee TBD • 4688 Princess Anne Rd</div>
+    </div>
+    <span class="type type-research">Research</span>
   </div>
 
   <p class="updated">Market Boss AI Hub</p>
