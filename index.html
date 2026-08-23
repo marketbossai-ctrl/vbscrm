@@ -3,89 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VBSpotlight CRM</title>
+<title>Market Boss AI Hub</title>
 <style>
-:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #7c3aed; --accent2: #a78bfa; --green: #22c55e; --yellow: #eab308; --red: #ef4444; --blue: #3b82f6; --orange: #f97316; --purple: #a855f7; --pink: #ec4899; --teal: #14b8a6; --gray: #6b7280; }
+:root { --bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; --muted: #888; --accent: #7c3aed; --accent2: #a78bfa; --green: #22c55e; --orange: #f97316; --purple: #a855f7; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 16px; }
-.container { max-width: 800px; margin: 0 auto; }
-h1 { font-size: 1.5rem; margin-bottom: 6px; }
-.muted { color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
-.card { background: var(--card); border-radius: 10px; padding: 18px; margin-bottom: 12px; border-left: 4px solid var(--accent); }
-.card h3 { font-size: 1rem; margin-bottom: 4px; }
-.card h3 a { color: var(--accent2); text-decoration: none; }
-.card h3 a:hover { text-decoration: underline; }
-.card .meta { font-size: 0.8rem; color: var(--muted); }
-.stage-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; padding: 3px 8px; border-radius: 4px; display: inline-block; margin-bottom: 8px; }
-.stage-reviewed { background: rgba(249,115,22,0.15); color: var(--orange); }
-.stage-scheduled { background: rgba(168,85,247,0.15); color: var(--purple); }
-.stage-completed { background: rgba(59,130,246,0.15); color: var(--blue); }
-.stage-published { background: rgba(34,197,94,0.15); color: var(--green); }
-.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; margin-bottom: 20px; }
-.stat { background: var(--card); border-radius: 8px; padding: 12px; text-align: center; }
-.stat .num { font-size: 1.4rem; font-weight: 700; }
-.stat .label { font-size: 0.7rem; color: var(--muted); margin-top: 2px; }
-.detail-page { max-width: 700px; margin: 0 auto; }
-.detail-page h1 { font-size: 1.5rem; }
-.section { background: var(--card); border-radius: 10px; padding: 18px; margin-bottom: 14px; }
-.section h2 { font-size: 1rem; margin-bottom: 10px; color: var(--accent2); }
-.section ul { list-style: none; }
-.section ul li { padding: 4px 0; font-size: 0.9rem; display: flex; align-items: center; gap: 6px; }
-.check { color: var(--green); }
-.uncheck { color: var(--muted); }
-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-td { padding: 6px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
-td:first-child { color: var(--muted); font-weight: 500; white-space: nowrap; }
-.back-link { display: inline-block; color: var(--muted); text-decoration: none; font-size: 0.85rem; margin-bottom: 16px; }
-.back-link:hover { color: var(--text); }
-.pipeline-bar { display: flex; gap: 4px; margin: 8px 0 12px; flex-wrap: wrap; }
-.pipeline-step { padding: 4px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 500; background: rgba(255,255,255,0.05); color: var(--muted); }
-.pipeline-step.done { background: rgba(34,197,94,0.15); color: var(--green); }
-.badge { font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; font-weight: 600; }
-.updated { font-size: 0.75rem; color: var(--muted); margin-top: 30px; text-align: center; }
+body { font-family: system-ui, sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; }
+.container { max-width: 640px; width: 100%; text-align: center; }
+h1 { font-size: 1.8rem; margin-bottom: 4px; }
+.muted { color: var(--muted); font-size: 0.85rem; margin-bottom: 36px; }
+.grid { display: grid; gap: 14px; }
+.card { background: var(--card); border-radius: 10px; padding: 22px 18px; text-decoration: none; display: block; transition: transform 0.15s, border-color 0.15s; border-left: 4px solid var(--card); }
+.card:hover { transform: translateY(-2px); }
+.card.crm { border-left-color: var(--purple); }
+.card.crm:hover { border-left-color: var(--accent2); }
+.card.websites { border-left-color: var(--green); }
+.card.websites:hover { border-left-color: #4ade80; }
+.card.articles { border-left-color: var(--orange); }
+.card.articles:hover { border-left-color: #fb923c; }
+.card .icon { font-size: 1.6rem; margin-bottom: 6px; }
+.card h3 { font-size: 1.05rem; color: var(--text); margin-bottom: 4px; }
+.card p { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+.footer { margin-top: 36px; font-size: 0.72rem; color: var(--muted); }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>🔦 VBSpotlight CRM</h1>
-  <p class="muted">Pipeline overview — last updated August 23, 2026</p>
+  <h1>Market Boss AI</h1>
+  <p class="muted">Tools, content, and client work — one place</p>
 
-  <div class="stats">
-    <div class="stat"><div class="num">0</div><div class="label">🔵 Contacted</div></div>
-    <div class="stat"><div class="num">0</div><div class="label">🟡 Applied</div></div>
-    <div class="stat"><div class="num">2</div><div class="label">🟠 Reviewed</div></div>
-    <div class="stat"><div class="num">1</div><div class="label">🟣 Scheduled</div></div>
-    <div class="stat"><div class="num">0</div><div class="label">🔴 Completed</div></div>
-    <div class="stat"><div class="num">0</div><div class="label">🟢 Published</div></div>
-    <div class="stat"><div class="num">0</div><div class="label">⭐ Won</div></div>
+  <div class="grid">
+    <a href="crm/" class="card crm">
+      <div class="icon">🔦</div>
+      <h3>VBSpotlight CRM</h3>
+      <p>Pipeline tracker — prospects, interviews, articles, and Market Boss AI conversions</p>
+    </a>
+
+    <a href="websites/" class="card websites">
+      <div class="icon">🌐</div>
+      <h3>Website Designs</h3>
+      <p>Client website prototypes, landing pages, and design previews</p>
+    </a>
+
+    <a href="articles/" class="card articles">
+      <div class="icon">📝</div>
+      <h3>VBSpotlight Articles</h3>
+      <p>Article drafts ready for review — send to clients, publish when approved</p>
+    </a>
   </div>
 
-  <h2 style="font-size:0.9rem;color:var(--purple);margin-bottom:10px;">🟣 Interview Scheduled (1)</h2>
-  <div class="card" style="border-left-color:var(--purple);">
-    <h3><a href="oceanview-hvac.html">Ocean View HVAC</a></h3>
-    <div class="meta">Earl, Owner • Norfolk, VA • Thu Aug 28, 2pm • (757) 377-2042</div>
-  </div>
-
-  <h2 style="font-size:0.9rem;color:var(--orange);margin:20px 0 10px;">🟠 Reviewed (2)</h2>
-  <div class="card" style="border-left-color:var(--orange);">
-    <h3><a href="ribcity.html">Rib City</a></h3>
-    <div class="meta">Franchise BBQ • Virginia Beach, VA • (757) 961-3690</div>
-  </div>
-  <div class="card" style="border-left-color:var(--accent);">
-    <h3><a href="marketbossai.html">Market Boss AI</a></h3>
-    <div class="meta">Jeff Wilson, Founder • Virginia Beach, VA • Article draft ready</div>
-  </div>
-
-  <h2 style="font-size:0.9rem;color:var(--muted);margin:20px 0 10px;">This Week</h2>
-  <div class="card" style="border-left-color:var(--green);">
-    <ul class="section" style="list-style:none;padding:0;background:none;">
-      <li style="color:var(--green);">✅ Schedule Ocean View HVAC (Earl) → Thu Aug 28, 2pm</li>
-      <li style="color:var(--muted);">⬜ Schedule Rib City VB (find franchisee name first)</li>
-      <li style="color:var(--muted);">⬜ Follow up on outstanding applications</li>
-    </ul>
-  </div>
-
-  <p class="updated">Powered by Hermes Agent • VBSpotlight.com</p>
+  <p class="footer">marketbossai-ctrl.github.io/vbscrm</p>
 </div>
 </body>
 </html>
